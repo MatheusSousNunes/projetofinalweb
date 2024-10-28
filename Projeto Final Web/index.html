@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Delicias crocantes </title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="favicon.delicias.png">
+
+</head>
+
+<body>
+
+    <img src="delicias crocantes 7.png" alt="capa web" class="imagem-des">
+
+    <div class="cadastro">
+        <a id="submit" href="cadastro.html">Cadastre -se</a><br><br>
+        <a id="submit" href="login.html">Login</a>
+    </div>
+
+    <div class="cart">
+        <h2>Carrinho de Compras</h2>
+        <p id="cart-items">Nenhum item no carrinho.</p>
+        <button class="order-button" onclick="alert('Seu pedido foi enviado!')">Finalizar Pedido</button>
+    </div>
+
+    <div class="divmother">
+        <div class="divlanc">
+            <h3>Lanches</h3>
+            <div class="lanches">
+                <img class="photos" src="IMG-20241023-WA0047.jpg" alt="Pastel">
+                <h2>Pastel</h2>
+                <p>Delicioso pastel frito com recheio de carne, queijo ou frango.</p>
+                <p><strong>Preço: R$ 5,00</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('Pastel', 5.00)">Fazer Pedido</a>
+            </div>
+
+            <div class="lanches">
+                <img class="photos" src="IMG-20241023-WA0043.jpg" alt="Esfiha">
+                <h2>Esfiha</h2>
+                <p>Esfiha aberta com recheio de carne ou queijo, assada no forno.</p>
+                <p><strong>Preço: R$ 4,00</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('Esfiha', 4.00)">Fazer Pedido</a>
+            </div>
+
+            <div class="lanches">
+                <img class="photos" src="IMG-20241023-WA0040.jpg" alt="Coxinha">
+                <h2>Coxinha</h2>
+                <p>Coxinha de frango com crocância e recheio.</p>
+                <p><strong>Preço: R$ 6,00</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('Coxinha', 6.00)">Fazer Pedido</a>
+            </div>
+
+            <div class="lanches">
+                <img class="photos" src="IMG-20241023-WA0045.jpg" alt="Kibe" style="position: relative;height: 77px;">
+                <h2>Kibe</h2>
+                <p>Kibe assado ou frito, recheado com carne temperada.</p>
+                <p><strong>Preço: R$ 5,50</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('Kibe', 5.50)">Fazer Pedido</a>
+            </div>
+
+            <div class="lanches">
+                <img class="photos" src="IMG-20241023-WA0046.jpg" alt="Pastel de Forno">
+                <h2>Pastel de Forno</h2>
+                <p>Pastel saboroso na massa de empada de frango, nos sabores frango, queijo e carne.</p>
+                <p><strong>Preço: R$ 5,00</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('Pastel de forno', 5.00)">Fazer Pedido</a>
+            </div>
+
+            <div class="lanches">
+                <img class="photos" src="IMG-20241023-WA0035.jpg" alt="Bolinha de Queijo">
+                <h2>Bolinha de Queijo</h2>
+                <p>Deliciosas bolinhas de queijo fritas, crocantes por fora e derretidas por dentro.</p>
+                <p><strong>Preço: R$ 4,50</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('Bolinha de Queijo', 4.50)">Fazer Pedido</a>
+            </div>
+
+            <div class="lanches">
+                <img class="photos" src="IMG-20241023-WA0042.jpg" alt="Enroladinho de Camarão">
+                <h2>Enroladinho de Camarão</h2>
+                <p>Recheado com carne moída temperada e especiarias.</p>
+                <p><strong>Preço: R$ 5,50</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('enroladinho de camarão', 5.50)">Fazer Pedido</a>
+            </div>
+
+            <div class="lanches">
+                <img class="photos" src="IMG-20241023-WA0041.jpg" alt="empada">
+                <h2>Empada</h2>
+                <p>Massa crocante com um recheio cremoso de frango e requijão.</p>
+                <p><strong>Preço: R$ 5,50</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('empada', 5.50)">Fazer Pedido</a>
+            </div>
+
+        </div>
+        
+        <div class="divbeb">
+            <h3>Bebidas</h3>
+            <div class="bebidas">
+                <img class="photos" src="IMG-20241023-WA0038.jpg" alt="coca lata" style="position: relative;height: 147px;">
+                <h2>Coca em lata</h2>
+                <p>Refrigerante refrescante sabor cola, em lata.</p>
+                <p><strong>Preço: R$ 3,50</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('coca', 5.50)">Fazer Pedido</a>
+            </div>
+
+            <div class="bebidas">
+                <img class="photos" src="IMG-20241023-WA0039.jpg" alt="coca zero">
+                <h2>Coca Zero</h2>
+                <p>A mesma bebida refrescante sabor cola mas dessa vez sem açucar.</p>
+                <p><strong>Preço: R$ 3,50</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('coca', 5.50)">Fazer Pedido</a>
+            </div>
+
+            <div class="bebidas">
+                <img class="photos" src="IMG-20241023-WA0044.jpg" alt="fanta lata">
+                <h2>Fanta em lata</h2>
+                <p>Refrigerante refrescante sabor laranja.</p>
+                <p><strong>Preço: R$ 3,50</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('fanta', 5.50)">Fazer Pedido</a>
+            </div>
+
+            <div class="bebidas">
+                <img class="photos" src="IMG-20241023-WA0034.jpg" alt="água mineral">
+                <h2>Água mineral</h2>
+                <p>Garrafinha de 500ml de água mineral.</p>
+                <p><strong>Preço: R$ 1,50</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('água', 5.50)">Fazer Pedido</a>
+            </div>
+
+            <div class="bebidas">
+                <img class="photos" src="IMG-20241023-WA0048.jpg" alt="suco de laranja">
+                <h2>Suco de Laranja</h2>
+                <p>Suco natural no sabor laranja.</p>
+                <p><strong>Preço: R$ 6,50</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('suco', 5.50)">Fazer Pedido</a>
+            </div>
+
+            <div class="bebidas">
+                <img class="photos" src="IMG-20241023-WA0037.jpg" alt="coca 1 litro" style="position: relative;height: 124px;">
+                <h2>Refrigerante 1 litro</h2>
+                <p>Refrigerante 1 litro.</p>
+                <p><strong>Preço: R$ 9,00</strong></p>
+                <a href="#" class="order-button" onclick="addToCart('coca 1', 5.50)">Fazer Pedido</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var cart = [];
+
+        function addToCart(itemName, itemPrice) {
+            cart.push({ name: itemName, price: itemPrice });
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById(`cart-items`);
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = `Nenhum item no carrinho.`;
+            } else {
+                cartItems.innerHTML = cart.map(item => `${item.name} - R$ ${item.price.toFixed(2)}`).join('<br>');
+            }
+        }
+    </script>
+
+</body>
+
+</html>

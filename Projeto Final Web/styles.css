@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(fundo\ cadastros.jpg);
+}
+
+.box {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0 , 0 , 0.9);
+    padding: 15px;
+    border-radius: 15px;
+    width: 50%;
+}
+
+legend{
+    border: 1px #e67e22;
+    text-align: center;
+    background-color: #e67e22;
+    border-radius: 8px;
+}
+
+.inputbox {
+    position: relative;
+}
+
+.inputuser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelinput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputuser:focus~.labelinput,.inputuser:valid~.labelinput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 13px;
+}
+
+#submit {
+    background-color: #e67e22;
+    width: 78%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#submit:hover {
+    background-color: #e67e22;
+}
